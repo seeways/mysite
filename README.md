@@ -17,3 +17,5 @@
 [django项目详解3——数据库](http://blog.csdn.net/lftaoyuan/article/details/79014162)
 
 [django 项目详解——mysql配置及应用](http://blog.csdn.net/lftaoyuan/article/details/79014082)
+
+如果你觉得还不错，请帮我点个star吧
