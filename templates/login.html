@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Login</title>
+</head>
+<body>
+<div style="text-align: center;">
+    <form action="/login/" method="post">
+        {% csrf_token %}  <!-- 跨域请求 -->
+        用户名：<label><input type="text" name="username"/></label><br>
+        密 码：<label><input type="password" name="password"></label><br>
+        <input type="submit" name="提交">
+    </form>
+</div>
+
+
+<table border="1">
+    <thead>
+    <th>用户名</th>
+    <th>密码</th>
+    </thead>
+    <tbody>
+    {% for line in data %}
+        <tr>
+            <td>{{ line.user }}</td>
+            <td>{{ line.pwd }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
